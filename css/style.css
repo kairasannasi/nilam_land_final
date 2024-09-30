@@ -1164,6 +1164,10 @@ button:focus {
   top: 30px;
 }
 
+.flaticon-expand:before {
+  content: "\f424" !important;
+}
+
 .input-info-save {
   font-size: 14px;
 }
@@ -1513,7 +1517,7 @@ ul {
 ---------------------------------------------------- */
 #scrollUp {
   background-color: var(--section-bg-1);
-  color: var(--ltn__heading-color);
+  color: var(--ltn__heading-color) !important;
   bottom: 70px;
   font-size: 20px;
   font-weight: bold;
@@ -1539,8 +1543,8 @@ ul {
 }
 
 #scrollUp:hover {
-  background-color: var(--ltn__secondary-color);
-  color: var(--white);
+  background-color: var(--ltn__secondary-color) !important;
+  color: var(--white) !important;
 }
 
 /* ----------------------------------------------------
@@ -6759,9 +6763,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 /* Sticky Background Black */
-.sticky-active.ltn__sticky-bg-black {
+/* .sticky-active.ltn__sticky-bg-black {
   background-color: var(--ltn__heading-color);
-}
+} */
 
 .sticky-active.ltn__sticky-bg-black .ltn__main-menu>ul>li>a,
 .sticky-active.ltn__sticky-bg-black .header-wishlist a,
@@ -9462,6 +9466,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .ltn__product-item-4 .product-img-location-gallery {
@@ -9519,7 +9525,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .ltn__product-item-4 .product-info {
-  padding: 30px 30px 1px;
+  padding: 15px 15px 1px;
 }
 
 .ltn__product-item-4 .product-price {
@@ -9591,9 +9597,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .ltn__product-item-4 .product-hover-action ul li a {
   background-color: transparent;
-}
-.ltn__product-item-4 .product-hover-action ul li a i {
-  color: red;
 }
 
 
@@ -9719,8 +9722,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .ltn__product-item-5 .real-estate-agent .agent-img img {
-  border: 3px solid;
+  border: 1px solid;
   border-color: var(--border-color-1);
+  padding: 5px;
+  background-color: var(--border-color-1);
 }
 
 .ltn__product-item-5 .product-hover-action {
@@ -11237,7 +11242,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   Section title
 ---------------------------------------- */
 .section-title-area {
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .section-title-area p {
@@ -18602,7 +18607,6 @@ input.cart-plus-minus-box {
 -------------------------*/
 .footer-top-area {
   padding-top: 30px;
-  padding-bottom: 30px;
   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.26);
 }
 
